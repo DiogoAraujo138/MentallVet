@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline-variant": "#c1c7d2",
+                        "primary-fixed-dim": "#a1c9ff",
+                        "surface": "#f9f9f9",
+                        "primary-fixed": "#d2e4ff",
+                        "primary-container": "#2a72b8",
+                        "surface-tint": "#0861a6",
+                        "on-primary-fixed-variant": "#00487f",
+                        "surface-bright": "#f9f9f9",
+                        "surface-container-highest": "#e2e2e2",
+                        "surface-container-high": "#e8e8e8",
+                        "surface-variant": "#e2e2e2",
+                        "surface-container-low": "#f4f3f3",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed": "#d0e4ff",
+                        "on-background": "#1a1c1c",
+                        "on-tertiary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "inverse-primary": "#a1c9ff",
+                        "on-secondary-fixed-variant": "#26496a",
+                        "on-primary-fixed": "#001c37",
+                        "on-secondary-container": "#3a5c7e",
+                        "on-tertiary-container": "#eef5ff",
+                        "tertiary-container": "#5a728b",
+                        "tertiary": "#415971",
+                        "on-primary-container": "#f0f4ff",
+                        "on-surface-variant": "#414751",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed-dim": "#b0c9e5",
+                        "on-error-container": "#93000a",
+                        "outline": "#717782",
+                        "inverse-on-surface": "#f1f1f1",
+                        "secondary-fixed-dim": "#a7caf1",
+                        "secondary-container": "#b2d5fd",
+                        "on-secondary": "#ffffff",
+                        "primary": "#00599b",
+                        "on-surface": "#1a1c1c",
+                        "on-primary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container": "#eeeeee",
+                        "inverse-surface": "#2f3131",
+                        "surface-dim": "#dadada",
+                        "secondary": "#3f6183",
+                        "on-tertiary-fixed": "#011d32",
+                        "background": "#f9f9f9",
+                        "on-secondary-fixed": "#001d34",
+                        "tertiary-fixed": "#cee5ff",
+                        "on-tertiary-fixed-variant": "#314960"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-asymmetry {
+            margin-left: clamp(0rem, 10vw, 15rem);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-primary-fixed">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_20px_40px_rgba(0,89,155,0.06)]">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20">
+<div class="flex items-center">
+<img alt="Mentall.vet Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uiu7xlJSxf1EXqcaZHNsb1O470KaqrgYw-u5ruAstOBC3J8dF2tvZYuruwsac0uv6laAo1x2db5mv4KksxGVeKXNWcbTJctQ5H2coh8YuVOU5trPQ_UScgL5IBfH7vHpqS3NH10_dXxHs3ubNjCEdujNPD_d3dECq7EdRrxswtiT5t9uDwLbT5dKHEpFnnQGtB0-aa5V1B9aO5G0zIFhLjNfowVVF3r6yc34_ntb_ZReFzPIUkU8MGlv_HNRMgPJYXjttXqDHegvg"/>
+</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-['Plus_Jakarta_Sans'] text-sm tracking-wider uppercase font-semibold text-slate-600 hover:text-blue-600 transition-all duration-300" href="#">Home</a>
+<a class="font-['Plus_Jakarta_Sans'] text-sm tracking-wider uppercase font-semibold text-slate-600 hover:text-blue-600 transition-all duration-300" href="#">Serviços</a>
+<a class="font-['Plus_Jakarta_Sans'] text-sm tracking-wider uppercase font-semibold text-blue-700 border-b-2 border-blue-700 pb-1" href="#">Institucional</a>
+<a class="font-['Plus_Jakarta_Sans'] text-sm tracking-wider uppercase font-semibold text-slate-600 hover:text-blue-600 transition-all duration-300" href="#">Contato</a>
+<button class="bg-gradient-to-br from-primary to-primary-container text-white px-6 py-3 rounded-xl font-['Plus_Jakarta_Sans'] text-sm font-bold tracking-wider hover:opacity-90 active:scale-95 transition-all">
+                    Área do Cliente
+                </button>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section: Institutional Focus -->
+<section class="relative min-h-[700px] flex items-center px-8 overflow-hidden bg-surface-container-low">
+<div class="absolute right-0 top-0 w-1/2 h-full hidden lg:block opacity-20">
+<div class="w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary-container/20 via-transparent to-transparent"></div>
+</div>
+<div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 space-y-8">
+<span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold tracking-[0.15em] uppercase">Excelência em Saúde Ocupacional Veterinária</span>
+<h1 class="font-headline text-5xl md:text-7xl font-bold text-primary tracking-tighter leading-[0.95]">
+                        O Elo entre <br/>Rigor Clínico e <br/><span class="text-secondary font-light italic">Sustentabilidade Humana.</span>
+</h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-xl leading-relaxed">
+                        A Mentall.vet é a primeira instituição brasileira dedicada exclusivamente à integração entre a alta performance clínica e o bem-estar psicológico no ecossistema veterinário.
+                    </p>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl relative z-10">
+<img class="w-full h-full object-cover grayscale-[0.1]" data-alt="Modern clinical corporate headquarters" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQ15Ln-yp5647UDqI73wWpWv1BIGk8kiEo6lQG1ujCUGclD4PqRKpB_GAbOagwHH3iBuBXibz-gri4oy_33WUtMQTKFtdyteWlm__k9L2cQ6tOTu1PjVFPty2pNFtMLzlPhwz6sjTccYevHDCqZ_KH0g35SF621N1RsCaSAQanUpNx8oBmCOU_i0f82TOLlMrT2yv9FJfoBJzygTDFZBEqk9DkA2OWwRn09AR5gQTdcGh_sOVd4AkOO2Ce0H9Yc-b7iUHTruLdnr0"/>
+<div class="absolute inset-0 bg-primary/5 mix-blend-multiply"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Company History & Foundation -->
+<section class="py-32 px-8 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<div>
+<h2 class="font-headline text-sm font-bold text-secondary uppercase tracking-[0.2em] mb-4">Nossa Trajetória</h2>
+<h3 class="font-headline text-4xl font-bold text-primary mb-8 tracking-tight">Uma Resposta Necessária à Crise da Profissão</h3>
+<div class="space-y-6 text-on-surface-variant leading-relaxed text-lg">
+<p>
+                                Fundada em 2024, a Mentall.vet surgiu da observação crítica de um gap sistêmico na medicina veterinária: o descompasso entre a evolução técnica e a preservação da saúde mental de seus profissionais.
+                            </p>
+<p>
+                                O que começou como um projeto de pesquisa em psicologia ocupacional transformou-se em uma organização robusta, unindo metodologias clínicas baseadas em evidências com a sensibilidade necessária para tratar quem cuida.
+                            </p>
+</div>
+<div class="mt-12 flex gap-12">
+<div>
+<div class="text-4xl font-bold text-primary mb-1">2024</div>
+<div class="text-sm font-bold text-on-surface-variant uppercase tracking-wider">Fundação</div>
+</div>
+<div>
+<div class="text-4xl font-bold text-primary mb-1">50+</div>
+<div class="text-sm font-bold text-on-surface-variant uppercase tracking-wider">Clínicas Parceiras</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-2 rounded-[3rem] shadow-inner">
+<img alt="Team meeting and collaboration" class="rounded-[2.8rem] w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAz2R-ESrXUNiuwsP-F_nNdo36RNKF65UERAUnO2vX2L-RkxdSOZuS1_sQEvUkAbygOiXrggfouBPdq_S4U-h5if8QBNyhP6sbrlVhJtfaKKSoaH9mjiHIz8KniMwpB0BEFWXzfaguU-QzltV6L5he43DBxbjO58dxiRRlXF4AZse7OdtJFtkJrqdTA246hMr3FwN7890fW-fQeQ9tH_0kO8B1uJtpVpvuGHsRpznEedqx6wCclg0OQWh8MdcnVGI3SU0dw6RJo-Fk"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Meet the Team -->
+<section class="py-32 px-8 bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-20">
+<h2 class="font-headline text-4xl font-bold text-primary tracking-tighter">Liderança e Expertise</h2>
+<p class="mt-4 text-on-surface-variant max-w-2xl mx-auto">Nossa equipe é composta por psicólogos especializados em trauma, consultores em gestão hospitalar e médicos veterinários dedicados à causa do bem-estar.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Team Member 1 -->
+<div class="bg-surface p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all group">
+<div class="aspect-square rounded-2xl overflow-hidden mb-6">
+<img alt="Dr. Julianne Rossi" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUc4WTlKVoYrzhrzAVza280_gjC5s_XZwXzldGh_Ngr5ZuJjaRai1QBFr8x2upfKPgC8j-w0HH8t021Vje-YWk-mzMpJ_SwrGYkOXBFMkkS93MjF9yBTY2bPe-Ck62OuMhkIZ1dTFcO_0BOkWU3Sb-YbhcjBkTrtmpTDdB9212fkQIgmDaOBWS2Iec3vQKTEJ6y9u3VZNKeVw2MMvyiwmVedJobn3Lhqgd2P9WPrgTHN_9WNdopkoOYwogEsv9CtfNKTOCkqNEVvw"/>
+</div>
+<h4 class="font-headline text-xl font-bold text-primary">Dra. Julianne Rossi</h4>
+<p class="text-sm text-secondary font-bold uppercase tracking-widest mt-1">Founder &amp; CEO</p>
+<p class="mt-4 text-sm text-on-surface-variant leading-relaxed">Especialista em Psicologia Organizacional e Saúde Mental no Trabalho Veterinário.</p>
+</div>
+<!-- Team Member 2 -->
+<div class="bg-surface p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all group">
+<div class="aspect-square rounded-2xl overflow-hidden mb-6">
+<img alt="Dr. Ricardo Mendes" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9banUqOW2voZfFpqaAa05L1TIQc9dxr6CobtEt6TB3dGznw-JQ8YYZqRT10Y8O2jm-notMSEUBQay8rI4JfrR_NEj-T7K2_o_vRAgOwGtgFrv5RSYXdALzcWfz9ZiV9K63_iIXuOqWb69UBhYuiuxR6rQB9zBfIWXiRfqHJY6rDF12v8GteTBICW3WqVGALbdBzbSu0Pcv9HmzIOcsR-nYTwvgAbMYQBCw3hEVp6XwSO5pk5gG9uDP0E-9QUbbYP6KdiMgFgy_84"/>
+</div>
+<h4 class="font-headline text-xl font-bold text-primary">Dr. Ricardo Mendes</h4>
+<p class="text-sm text-secondary font-bold uppercase tracking-widest mt-1">Diretor de Operações Clínicas</p>
+<p class="mt-4 text-sm text-on-surface-variant leading-relaxed">Médico Veterinário com 15 anos de experiência em gestão de centros cirúrgicos.</p>
+</div>
+<!-- Team Member 3 -->
+<div class="bg-surface p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all group">
+<div class="aspect-square rounded-2xl overflow-hidden mb-6">
+<img alt="Ana Paula Souza" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZswTNYyoHeWMikSRz3dR2pRGMfSKmFApl9VlFZIeVIHnIC1_a-YH76AUu5erlUpnG65BL9KziGKRDiR8EdVYd7K_g7UMCIOS9dr5z1F2rP7wvrljdn7kWbWq7QzH5ROdACDpMvURhjwbMIgGCSXgIRkcPsCa4cTChUGfKtObvbspt3fRfhHeJyi528dGjUsln7GvgM_gnPdKxhBdDTRi2VUNcMiv-v6xrn4HH24nt3MNN0-IBeZZ7X8ZQvVBrsbaoBUnJluAXe4A"/>
+</div>
+<h4 class="font-headline text-xl font-bold text-primary">Ana Paula Souza</h4>
+<p class="text-sm text-secondary font-bold uppercase tracking-widest mt-1">Coordenação de Impacto Social</p>
+<p class="mt-4 text-sm text-on-surface-variant leading-relaxed">Especialista em responsabilidade social e desenvolvimento de comunidades corporativas.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Social Impact -->
+<section class="py-32 px-8 bg-primary text-on-primary relative overflow-hidden">
+<div class="absolute top-0 right-0 w-1/3 h-full opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white to-transparent"></div>
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<div class="order-2 lg:order-1">
+<div class="grid grid-cols-2 gap-8">
+<div class="p-8 bg-white/5 rounded-3xl border border-white/10">
+<span class="material-symbols-outlined text-4xl mb-4" data-icon="diversity_3">diversity_3</span>
+<h5 class="font-headline text-2xl font-bold mb-2">Comunidade</h5>
+<p class="text-sm opacity-80">Fomento a redes de apoio mútuo entre profissionais de todo o país.</p>
+</div>
+<div class="p-8 bg-white/5 rounded-3xl border border-white/10 mt-8">
+<span class="material-symbols-outlined text-4xl mb-4" data-icon="school">school</span>
+<h5 class="font-headline text-2xl font-bold mb-2">Educação</h5>
+<p class="text-sm opacity-80">Palestras gratuitas em universidades para preparar futuros veterinários.</p>
+</div>
+</div>
+</div>
+<div class="order-1 lg:order-2">
+<h2 class="font-headline text-sm font-bold text-primary-fixed uppercase tracking-[0.2em] mb-4">Compromisso Social</h2>
+<h3 class="font-headline text-4xl md:text-5xl font-bold mb-8 leading-tight">Mais do que uma Clínica, um Movimento de Regeneração.</h3>
+<p class="text-lg opacity-90 leading-relaxed">
+                        Nosso impacto social é medido pela redução das taxas de burnout e pela promoção de uma cultura de transparência emocional no ambiente médico. Acreditamos que uma sociedade que valoriza seus cuidadores é uma sociedade mais saudável.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Institutional Footer -->
+<footer class="w-full py-20 px-8 border-t border-slate-200 bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-16">
+<div class="col-span-1 md:col-span-1">
+<img alt="Mentall.vet" class="h-10 mb-8 grayscale opacity-80" src="https://lh3.googleusercontent.com/aida/ADBb0uiu7xlJSxf1EXqcaZHNsb1O470KaqrgYw-u5ruAstOBC3J8dF2tvZYuruwsac0uv6laAo1x2db5mv4KksxGVeKXNWcbTJctQ5H2coh8YuVOU5trPQ_UScgL5IBfH7vHpqS3NH10_dXxHs3ubNjCEdujNPD_d3dECq7EdRrxswtiT5t9uDwLbT5dKHEpFnnQGtB0-aa5V1B9aO5G0zIFhLjNfowVVF3r6yc34_ntb_ZReFzPIUkU8MGlv_HNRMgPJYXjttXqDHegvg"/>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                            Instituição dedicada à excelência clínica e ao desenvolvimento do capital humano na medicina veterinária.
+                        </p>
+</div>
+<div>
+<h6 class="font-bold text-primary mb-6 uppercase tracking-widest text-xs">Institucional</h6>
+<ul class="space-y-4">
+<li><a class="text-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Sobre a Mentall.vet</a></li>
+<li><a class="text-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Nossa Equipe</a></li>
+<li><a class="text-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Impacto e ESG</a></li>
+<li><a class="text-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Trabalhe Conosco</a></li>
+</ul>
+</div>
+<div>
+<h6 class="font-bold text-primary mb-6 uppercase tracking-widest text-xs">Soluções Corporativas</h6>
+<ul class="space-y-4">
+<li><a class="text-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Programas para Hospitais</a></li>
+<li><a class="text-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Treinamento de Liderança</a></li>
+<li><a class="text-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Consultoria Organizacional</a></li>
+</ul>
+</div>
+<div>
+<h6 class="font-bold text-primary mb-6 uppercase tracking-widest text-xs">Contatos Oficiais</h6>
+<ul class="space-y-4 text-sm text-on-surface-variant">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">mail</span> institucional@mentall.vet</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">location_on</span> Av. das Nações, 1400 - São Paulo, SP</li>
+</ul>
+</div>
+</div>
+<div class="mt-20 pt-8 border-t border-slate-200 flex flex-col md:row justify-between items-center gap-6">
+<p class="text-xs text-on-surface-variant font-medium">© 2024 Mentall.vet - Saúde Mental, Bem-estar e Desenvolvimento Profissional.</p>
+<div class="flex gap-8">
+<a class="text-xs font-bold text-secondary uppercase tracking-widest hover:text-primary transition-colors" href="#">LinkedIn</a>
+<a class="text-xs font-bold text-secondary uppercase tracking-widest hover:text-primary transition-colors" href="#">Relatório de Transparência</a>
+</div>
+</div>
+</div>
+</footer>
+</main>
+</body></html>

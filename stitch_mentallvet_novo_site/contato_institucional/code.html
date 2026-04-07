@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mentall.vet - Agendar Consulta</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "outline-variant": "#c1c7d2",
+                    "primary-fixed-dim": "#a1c9ff",
+                    "surface": "#f9f9f9",
+                    "primary-fixed": "#d2e4ff",
+                    "primary-container": "#2a72b8",
+                    "surface-tint": "#0861a6",
+                    "on-primary-fixed-variant": "#00487f",
+                    "surface-bright": "#f9f9f9",
+                    "surface-container-highest": "#e2e2e2",
+                    "surface-container-high": "#e8e8e8",
+                    "surface-variant": "#e2e2e2",
+                    "surface-container-low": "#f4f3f3",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed": "#d0e4ff",
+                    "on-background": "#1a1c1c",
+                    "on-tertiary": "#ffffff",
+                    "error": "#ba1a1a",
+                    "inverse-primary": "#a1c9ff",
+                    "on-secondary-fixed-variant": "#26496a",
+                    "on-primary-fixed": "#001c37",
+                    "on-secondary-container": "#3a5c7e",
+                    "on-tertiary-container": "#eef5ff",
+                    "tertiary-container": "#5a728b",
+                    "tertiary": "#415971",
+                    "on-primary-container": "#f0f4ff",
+                    "on-surface-variant": "#414751",
+                    "on-error": "#ffffff",
+                    "tertiary-fixed-dim": "#b0c9e5",
+                    "on-error-container": "#93000a",
+                    "outline": "#717782",
+                    "inverse-on-surface": "#f1f1f1",
+                    "secondary-fixed-dim": "#a7caf1",
+                    "secondary-container": "#b2d5fd",
+                    "on-secondary": "#ffffff",
+                    "primary": "#00599b",
+                    "on-surface": "#1a1c1c",
+                    "on-primary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container": "#eeeeee",
+                    "inverse-surface": "#2f3131",
+                    "surface-dim": "#dadada",
+                    "secondary": "#3f6183",
+                    "on-tertiary-fixed": "#011d32",
+                    "background": "#f9f9f9",
+                    "on-secondary-fixed": "#001d34",
+                    "tertiary-fixed": "#cee5ff",
+                    "on-tertiary-fixed-variant": "#314960"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-primary-fixed-dim">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_20px_40px_rgba(0,89,155,0.06)]">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20">
+<div class="font-['Space_Grotesk'] text-2xl font-bold tracking-tighter text-blue-900">
+                Mentall.vet
+            </div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-['Plus_Jakarta_Sans'] text-sm tracking-wider uppercase font-semibold text-slate-600 hover:text-blue-600 transition-all duration-300" href="#">Home</a>
+<a class="font-['Plus_Jakarta_Sans'] text-sm tracking-wider uppercase font-semibold text-slate-600 hover:text-blue-600 transition-all duration-300" href="#">Services</a>
+<a class="font-['Plus_Jakarta_Sans'] text-sm tracking-wider uppercase font-semibold text-slate-600 hover:text-blue-600 transition-all duration-300" href="#">About Us</a>
+<a class="font-['Plus_Jakarta_Sans'] text-sm tracking-wider uppercase font-semibold text-blue-700 border-b-2 border-blue-700 pb-1" href="#">Contact</a>
+</div>
+<button class="bg-gradient-to-br from-primary to-primary-container text-white px-6 py-3 rounded-xl font-bold text-xs uppercase tracking-widest hover:opacity-80 transition-all duration-300 active:scale-95">
+                Agendar Consulta
+            </button>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-8 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+<!-- Hero & Info Section -->
+<div class="lg:col-span-5 space-y-12">
+<div class="space-y-6">
+<h1 class="font-headline text-5xl md:text-6xl font-bold tracking-tighter text-primary leading-[1.1]">Agendamento de Consulta Especializada</h1>
+<p class="text-lg text-secondary max-w-md leading-relaxed">Ambiente clínico seguro e especializado, dedicado exclusivamente ao suporte da saúde mental e desenvolvimento profissional de médicos veterinários e acadêmicos da área.</p>
+</div>
+<!-- Contact Details -->
+<div class="space-y-8 pt-4">
+<div class="flex items-center gap-6 group">
+<div class="w-14 h-14 rounded-2xl bg-primary-fixed flex items-center justify-center text-primary transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined text-2xl">mail</span>
+</div>
+<div>
+<p class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-1">Email</p>
+<p class="text-lg font-semibold text-on-surface">contato@mentall.vet</p>
+</div>
+</div>
+<div class="flex items-center gap-6 group">
+<div class="w-14 h-14 rounded-2xl bg-primary-fixed flex items-center justify-center text-primary transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined text-2xl">chat</span>
+</div>
+<div>
+<p class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-1">WhatsApp</p>
+<p class="text-lg font-semibold text-on-surface">+55 (11) 99999-9999</p>
+</div>
+</div>
+<div class="flex items-center gap-6 group">
+<div class="w-14 h-14 rounded-2xl bg-primary-fixed flex items-center justify-center text-primary transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined text-2xl">share</span>
+</div>
+<div>
+<p class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-1">Redes Sociais</p>
+<div class="flex gap-4 mt-2">
+<a class="text-slate-500 hover:text-primary transition-colors font-semibold" href="#">Instagram</a>
+<a class="text-slate-500 hover:text-primary transition-colors font-semibold" href="#">LinkedIn</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Decorative Element -->
+<div class="relative mt-12 rounded-[2rem] overflow-hidden aspect-video shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="Modern clinical office interior with soft blue walls, large windows, comfortable seating, and a calming atmosphere for therapy sessions" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQw9olS-qVkRTXT1an_sovQRGAk_gylgsvhoQSVqC_GPR0OFnovlwzRsGN_yK5k7jUmNCO-x2ipV9YQIuXmuLExXzF8_3m0nsNiM0uZPELDtFpv8gX2_p_hzXpDerq-9DfHKSSKZB4IYCcOapyQxMPMaorpCY4a7hEzR85pl9HrKhX1FkNdNrITWKTTlKWrLjTgCP1-Dpa6tjRzjy64HR_I4H6bbJYyfrN9N5cvZV6813Ke6OyoFXpebfALYLIMpQNWFVicnhXW44"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent"></div>
+</div>
+</div>
+<!-- Form Section -->
+<div class="lg:col-span-7">
+<div class="bg-surface-container-lowest p-8 md:p-12 rounded-[2.5rem] shadow-[0_20px_40px_rgba(0,89,155,0.06)] border border-white/40">
+<form class="space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Name -->
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-slate-500 ml-1" for="name">Nome Completo</label>
+<input class="w-full px-6 py-4 rounded-xl bg-surface-container-low border-none focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all placeholder:text-slate-400" id="name" name="name" placeholder="Como prefere ser chamado?" type="text"/>
+</div>
+<!-- Role -->
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-slate-500 ml-1" for="role">Papel Profissional</label>
+<select class="w-full px-6 py-4 rounded-xl bg-surface-container-low border-none focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all text-slate-600" id="role" name="role">
+<option disabled="" selected="" value="">Selecione sua função</option>
+<option value="vet">Médico(a) Veterinário(a)</option>
+<option value="student">Estudante de Veterinária</option>
+<option value="tech">Técnico/Auxiliar</option>
+<option value="other">Outros Profissionais da Área</option>
+</select>
+</div>
+</div>
+<!-- Phone/WhatsApp -->
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-slate-500 ml-1" for="phone">Telefone / WhatsApp</label>
+<input class="w-full px-6 py-4 rounded-xl bg-surface-container-low border-none focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all placeholder:text-slate-400" id="phone" name="phone" placeholder="(00) 00000-0000" type="tel"/>
+</div>
+<!-- Message -->
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-slate-500 ml-1" for="message">Como podemos ajudar?</label>
+<textarea class="w-full px-6 py-4 rounded-xl bg-surface-container-low border-none focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all placeholder:text-slate-400" id="message" name="message" placeholder="Conte-nos brevemente o que você busca..." rows="4"></textarea>
+</div>
+<!-- Submit -->
+<div class="pt-4">
+<button class="w-full md:w-auto px-12 py-5 rounded-2xl bg-primary text-white font-bold text-sm uppercase tracking-[0.2em] shadow-lg hover:shadow-primary/20 hover:-translate-y-1 transition-all active:scale-95 flex items-center justify-center gap-3" type="submit">Solicitar Agendamento Clínico <span class="material-symbols-outlined text-xl">arrow_forward</span></button>
+<p class="text-[10px] text-slate-400 mt-6 text-center md:text-left leading-relaxed">
+                                Ao clicar em enviar, você concorda com nossos Termos de Privacidade. <br class="hidden md:block"/>
+                                Suas informações são confidenciais e tratadas sob sigilo clínico.
+                            </p>
+</div>
+</form>
+</div>
+<!-- Availability Badge -->
+<div class="mt-8 flex justify-center lg:justify-end">
+<div class="inline-flex items-center gap-3 px-4 py-2 bg-secondary-container/30 rounded-full">
+<span class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-primary"></span>
+</span>
+<span class="text-sm font-semibold text-primary">Terapeutas disponíveis agora</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 px-8 border-t border-slate-100 bg-slate-50">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="space-y-6">
+<div class="font-['Space_Grotesk'] text-xl font-bold text-blue-900">Mentall.vet</div>
+<p class="font-['Plus_Jakarta_Sans'] text-sm text-slate-500 leading-relaxed">Excelência no suporte à saúde mental e bem-estar para a comunidade veterinária brasileira.</p>
+</div>
+<div>
+<h4 class="font-bold text-blue-900 mb-6">Links</h4>
+<div class="flex flex-col gap-4">
+<a class="text-slate-500 hover:text-blue-600 hover:underline decoration-blue-400 underline-offset-4 transition-colors" href="#">Instagram</a>
+<a class="text-slate-500 hover:text-blue-600 hover:underline decoration-blue-400 underline-offset-4 transition-colors" href="#">LinkedIn</a>
+</div>
+</div>
+<div>
+<h4 class="font-bold text-blue-900 mb-6">Legal</h4>
+<div class="flex flex-col gap-4">
+<a class="text-slate-500 hover:text-blue-600 hover:underline decoration-blue-400 underline-offset-4 transition-colors" href="#">Privacy Policy</a>
+<a class="text-slate-500 hover:text-blue-600 hover:underline decoration-blue-400 underline-offset-4 transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+<div class="md:col-span-1">
+<p class="font-['Plus_Jakarta_Sans'] text-sm text-slate-500 mt-2">
+                    © 2024 Mentall.vet - The Clinical Sanctuary for Veterinary Professionals
+                </p>
+</div>
+</div>
+</footer>
+</body></html>
